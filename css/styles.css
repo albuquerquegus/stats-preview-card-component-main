@@ -1,0 +1,313 @@
+/* tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+.font-1 {
+  font: 400 13px/1.25 "Inter", sans-serif;
+}
+
+.font-1-1 {
+  font: 400 17px/2 "Inter", sans-serif;
+}
+
+.font-2 {
+  font: 700 32px/1.1 "Inter", sans-serif;
+}
+
+.font-3 {
+  font: 400 23px/1.2 "Lexend Deca", sans-serif;
+}
+
+/* Font- 1 (13px); font -1-1 (17px); font-2 (32px); font-3 (23px)*/
+/*
+.font-1 {
+  font: 400 12px/1.25 "Inter", sans-serif;
+}
+
+.font-1-1 {
+  font: 400 14px/2 "Inter", sans-serif;
+}
+
+.font-2 {
+  font: 700 28px/1.1 "Inter", sans-serif;
+}
+
+.font-3 {
+  font: 400 20px/1.2 "Lexend Deca", sans-serif;
+}/*
+
+/* cores */
+
+:root {
+  --very-dark: hsl(233, 47%, 7%);
+  --dark-desaturated: hsl(244, 38%, 16%);
+  --soft: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent: hsla(0, 0%, 100%, 0.6);
+}
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--white);
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* personalizacao */
+
+.container-bg {
+  align-items: center;
+  background-color: var(--very-dark);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  background-color: var(--dark-desaturated);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.descricao {
+  display: grid;
+  padding: 50px;
+  align-items: center;
+}
+
+.titulo-descricao {
+  color: var(--soft);
+}
+
+.descricao-servicos {
+  display: flex;
+  gap: 40px;
+}
+
+.descricao-servicos-p {
+  display: block;
+  text-transform: uppercase;
+}
+
+.imagem-produto {
+  position: relative;
+}
+
+.imagem-produto::after {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--soft);
+  opacity: 0.6;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1125px) {
+  .attribution {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .titulo {
+    font-size: 32px;
+  }
+  .descricao-conteudo {
+    font-size: 16px;
+  }
+  .descricao-servicos {
+    font-size: 19px;
+  }
+  .descricao-servicos-p {
+    font-size: 13px;
+  }
+  .descricao {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 935px) {
+  .titulo {
+    font-size: 30px;
+  }
+  .descricao-conteudo {
+    font-size: 15px;
+  }
+  .descricao-servicos {
+    font-size: 19px;
+  }
+  .descricao-servicos-p {
+    font-size: 13px;
+  }
+  .descricao {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 845px) {
+  .titulo {
+    font-size: 25px;
+  }
+  .descricao-conteudo {
+    font-size: 13.5px;
+  }
+  .descricao-servicos {
+    font-size: 19px;
+  }
+  .descricao-servicos-p {
+    font-size: 11px;
+  }
+  .descricao {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 25px;
+  }
+  .descricao-conteudo {
+    font-size: 12px;
+  }
+  .descricao-servicos {
+    font-size: 18px;
+  }
+  .descricao {
+    padding: 38px;
+  }
+}
+
+@media (max-width: 720px) {
+  .titulo {
+    font-size: 22px;
+  }
+  .descricao-conteudo {
+    font-size: 11px;
+  }
+  .descricao-servicos {
+    font-size: 16px;
+  }
+  .descricao-servicos-p {
+    font-size: 10px;
+  }
+  .descricao {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    text-align: center;
+    margin: 15px 20px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .imagem-produto {
+    order: -1;
+  }
+  .descricao-servicos {
+    flex-direction: column;
+  }
+  .titulo {
+    font-size: 28px;
+  }
+  .descricao-conteudo {
+    font-size: 14px;
+  }
+  .descricao-servicos {
+    font-size: 20px;
+    gap: 35px;
+  }
+  .descricao-servicos-p {
+    font-size: 12px;
+  }
+  .descricao,
+  .descricao-conteudo,
+  .descricao-servicos {
+    padding-top: 25px;
+  }
+  img,
+  .imagem-produto::after {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+
+@media (max-width: 404px) {
+  .titulo {
+    font-size: 25px;
+  }
+  .descricao-conteudo {
+    font-size: 13px;
+  }
+  .descricao-servicos {
+    font-size: 19px;
+    gap: 30px;
+  }
+  .descricao-servicos-p {
+    font-size: 11px;
+  }
+  .descricao,
+  .descricao-conteudo,
+  .descricao-servicos {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 372px) {
+  .titulo {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 351px) {
+  .titulo {
+    font-size: 22px;
+  }
+  .descricao-conteudo {
+    font-size: 12px;
+  }
+  .descricao-servicos {
+    font-size: 18px;
+    gap: 20px;
+  }
+  .descricao-servicos-p {
+    font-size: 10px;
+  }
+  .descricao,
+  .descricao-conteudo,
+  .descricao-servicos {
+    padding-top: 20px;
+  }
+}
